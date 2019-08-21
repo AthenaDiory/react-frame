@@ -1,1 +1,1 @@
-　因为有了recat-thunk这个中间件，所以action构造器里不仅可以返回一个对象，还可以返回一个函数，这个函数有个参数是dispatch。store发现action 是一个函数，会自动执行这个函数，然后在函数内部会发送一个普通action给reducer。
+　因为有了recat-thunk这个中间件，所以action构造器里不仅可以返回一个对象，还可以返回一个函数，这个函数有个参数是dispatch。store发现action 返回的是一个函数，会自动执行这个函数，然后在函数内部会发送一个普通action给reducer。
