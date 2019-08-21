@@ -17,10 +17,10 @@ class Test extends Component{
         testFun('val');
     }
     render(){
-        console.log(this.props.test);
+        const {test} = this.props;
         return (
             <div>
-                Test page
+                Test page {test.status}
             </div>
         )
     }
